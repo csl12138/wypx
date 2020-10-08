@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>外语培训</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				font-family: "微软雅黑";
+			}
+			/* 头部  */
+			
+			header {
+				width: 980px;
+				/*height: 27px*/
+				;
+				margin: 30px auto;
+				overflow: hidden;
+			}
+			
+			header .logo {
+				/*width: 122px;
+				height: 27px;*/
+				float: left;
+			}
+			
+			header .tel {
+				/*	width: 285px;
+				height: 26px;*/
+				float: right;
+			}
+			/* 导航栏  */
+			
+			.nav {
+				width: 100%;
+				/*height: 40px;*/
+				background-color: #0373b9;
+				font-size: 14px;
+			}
+			
+			.nav>ul {
+				width: 980px;
+				height: 40px;
+				margin: 0 auto;
+				text-align: center;
+				line-height: 40px;
+				color: white;
+			}
+			
+			.nav>ul li {
+				float: left;
+				width: 140px;
+				/*height: 40px;*/
+			}
+			
+			.nav>ul li:hover {
+				background-color: #25abff;
+				cursor: pointer;
+			}
+			/* 轮播图  */
+			
+			.banner {
+				width: 100%;
+				/*height: 580px;*/
+				position: relative;
+			}
+			
+			.banner ol {
+				width: 135px;
+				height: 5px;
+				position: absolute;
+				bottom: 50px;
+				left: 50%;
+				margin-left: -67.5px;
+			}
+			
+			.banner .on {
+				background-color: #ff5c33;
+			}
+			
+			.banner ol li {
+				float: left;
+				width: 30px;
+				height: 5px;
+				margin-left: 15px;
+				background-color: #90d1d5;
+				cursor: pointer;
+			}
+			/* 主内容区 */
+			
+			.content {
+				width: 980px;
+				margin: 0 auto;
+			}
+			/* 学校简介 */
+			
+			.introduce {
+				overflow: hidden;
+				height: 543px;
+				position: relative;
+			}
+			
+			.introduce h2, .course h2 {
+				font-weight: 100;
+				padding: 40px 0;
+				font-size: 24px;
+				color: #585858;
+				border-bottom: 7px solid #ececec;
+			}
+			
+			.introduce .introduce_left {
+				width: 145px;
+				padding-top: 47px;
+				float: left;
+			}
+			
+			.introduce .introduce_right {
+				width: 835px;
+				float: right;
+			}
+			
+			.introduce_right .txt1 {
+				font-size: 24px;
+				color: #ffa800;
+				padding: 32px 0 0 39px;
+			}
+			
+			.introduce_right .txt2 {
+				color: #6b6862;
+				padding: 36px 0 0 39px;
+			}
+			
+			.introduce .txt3 {
+				clear: both;
+				padding: 45px 0 5px 0;
+			}
+			
+			.introduce .showpic {
+				width: 1983px;
+				position: absolute;
+			}
+			
+			.introduce .showpic img {
+				float: left;
+				cursor: pointer;
+			}
+			
+			.introduce .showpic img:not(:first-of-type) {
+				margin-left: 25px;
+			}
+			
+			/* 英语课程特色 */			
+			.course {
+				overflow: hidden;
+			}
+			
+			.course .course_left {
+				width: 638px;
+				margin-top: 32px;
+				float: left;
+			}
+			
+			.course .course_left .pic2 {
+				float: left;
+			}
+			
+			.course .course_left img:not(:first-of-type) {
+				float: right;
+			}
+			
+			.course .pic3 {
+				cursor:  pointer;
+			}
+			
+			.course .course_right {
+				width: 326px;
+				float: right;
+				margin: 32px 0 0 16px;
+			}
+			
+			.course .course_right form {
+				padding-left: 25px;
+				text-align: left;
+			}
+			.course .course_right label {
+				display: inline-block;
+				font-size: 18px;
+				padding-right: 27px;
+				margin-bottom: 32px;
+			}
+			
+			.course .course_right input {
+				width: 200px;
+				height: 25px;
+			}
+			
+			.course .course_right select {
+				width: 200px;
+				height: 25px;
+			}
+			
+			.course .course_right img:last-child {
+				padding: 5px 0 0 90px;
+				cursor: pointer;
+			}
+			footer {
+				width: 100%;
+				background-color: #0373b9;
+				margin-top: 57px;
+				padding: 20px 0;
+				text-align: center;
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="logo">
+				<img src="img/logo.jpg" />
+			</div>
+			<div class="tel">
+				<img src="img/tel.jpg" />
+			</div>
+		</header>
+		<nav class="nav">
+			<ul>
+				<li>首页</li>
+				<li>机构</li>
+				<li>少儿英语</li>
+				<li>成人英语</li>
+				<li>英语四级</li>
+				<li>英语六级</li>
+				<li>托福雅思</li>
+			</ul>
+		</nav>
+		<div class="banner">
+			<img src="img/01.jpg" class="pic" />
+			<ol>
+				<li class="on"></li>
+				<li></li>
+				<li></li>
+			</ol>
+		</div>
+		<div class="content">
+			<div class="introduce">
+				<h2>学好英语网简介</h2>
+				<div class="introduce_left">
+					<img src="img/learn.jpg" alt="pic" class="pic_hi" />
+				</div>
+				<div class="introduce_right">
+					<p class="txt1">你知道学好英语网吗</p>
+					<p class="txt2">不论你学习英语是为了满足日常沟通的需要，还是为了工作和职业的发展，不论你现在的英语水平处在那个阶段, 想要前往那个阶段，我们的英语都能帮你达成目标。来自于美国硅谷“DynEdInternational”历经16年在全球80多个国家的成功实践， 听说读写全面覆盖的教学内容，实用而有趣的教材设计针对不同阶段的学员水平，从入门到精通的9个级别的英语晋升阶梯， 让你的学习成为轻松、快乐的旅程！高雅、舒适的教学环境，为您提供一个高端人士社交的平台， 专业的个人课程顾问和双语指 导老师将对您的学习效果提供保障。学好英语网已成为中国英语教育史上新的里程碑！</p>
+				</div>
+				<p class="txt3">环境展示</p>
+				<div class="showpic">
+					<img src="img/1.jpg" alt="" />
+					<img src="img/2.jpg" alt="" />
+					<img src="img/3.jpg" alt="" />
+					<img src="img/4.jpg" alt="" />
+					<img src="img/1.jpg" alt="" />
+					<img src="img/2.jpg" alt="" />
+					<img src="img/3.jpg" alt="" />
+					<img src="img/4.jpg" alt="" />
+				</div>
+			</div>
+			<div class="course">
+				<h2>英语课程特色</h2>
+				<div class="course_left">
+					<img src="img/111.jpg" class="pic2"/>
+					<img src="img/txt_111_1.jpg" class="pic3" />
+					<img src="img/txt_222_2.jpg" class="pic3"/>
+					<img src="img/txt_333_3.jpg" class="pic3"/>
+				</div>
+				<div class="course_right">
+					<img src="img/zhuce.jpg" />
+					<form action="" method="post" target="_blank">
+							<label>姓名:</label><input type="text" name="xm" value="" /><br />
+							<label>手机:</label><input type="text" name="sj" value="" /><br />
+							<label>邮箱:</label><input type="text" name="yx" value="" /><br />
+							<label>中心:</label><select name="zx">
+								<option>请选择学习中心</option>
+								<option>北京学习中心</option>
+								<option>上海学习中心</option>
+								<option>成都学习中心</option>
+								<option>重庆学习中心</option>
+							</select>
+					</form>
+					<img src="img/btn.jpg" alt="" />
+				</div>
+			</div>
+		</div>
+		<footer>
+			外语培训网版权所有2018-2028  京ICP备08001421号  京公网安备110108007702
+		</footer>
+
+		<script>
+			var banner = document.getElementsByClassName("banner")[0];
+			var lis = banner.getElementsByTagName("li"); /* 小按钮 */
+			var pic = document.getElementsByClassName("pic")[0];
+			var arry = ["img/01.jpg", "img/02.jpg", "img/03.jpg"];
+			var num1 = 1;
+			var num2 = 1;
+			var num3;
+			var showpic = document.getElementsByClassName("showpic")[0];
+			showpic.style.left = 0 + "px";
+			var templeft = showpic.offsetLeft;
+			var arry2 = ["img/111.jpg", "img/222.jpg", "img/333.jpg"];
+			var arry3 = ["img/txt_111.jpg", "img/txt_222.jpg", "img/txt_333.jpg"];
+			var arry4 = ["img/txt_111_1.jpg", "img/txt_222_2.jpg", "img/txt_333_3.jpg"];
+			var pic2 = document.getElementsByClassName("pic2")[0];
+			var pic3 = document.getElementsByClassName("pic3");
+			
+			function txthover () {
+				for (var i=0; i <= arry3.length -1; i++) {
+					pic3[i].index = i;
+					pic3[i].onmouseover = function () {
+						num3 = this.index;
+						num2 = this.index;
+						this.src = arry3[num3];
+						pic2.src = arry2[num3];
+						clearInterval(timer3);
+					}
+					pic3[i].onmouseout = function () {
+						num3 = this.index;
+						this.src = arry4[num3];
+						play3();
+					}
+				}
+			}
+			txthover();
+			
+			function play3() {
+				timer3 = setInterval(function () {
+					if(num2 > 2) {
+						num2 = 0;
+					}
+					pic2.src = arry2[num2];
+					num2 += 1;
+				},2000)
+			}
+			
+			play3();
+
+			function play2() {
+				timer2 = setInterval(function() {
+					if(templeft == -979) {
+						templeft = 25;
+					}
+					templeft -= 1;
+					showpic.style.left = templeft + "px";
+				}, 15);
+			}
+
+			showpic.onmouseover = function() {
+				clearInterval(timer2);
+			}
+
+			showpic.onmouseout = function() {
+				play2();
+			}
+
+			play2();
+
+			function play() {
+				timer = setInterval(function() {
+					for(var j = 0; j <= lis.length - 1; j++) {
+						lis[j].className = "";
+					}
+					if(num1 > 2) {
+						num1 = 0;
+					}
+					pic.src = arry[num1];
+					lis[num1].className = "on";
+					num1 += 1;
+				}, 2000);
+			}
+
+			for(var i = 0; i <= arry.length - 1; i++) {
+				lis[i].index = i; /* 添加的一个index属性 */
+				lis[i].onmouseover = function() { /* 清空所有 on 类名 */
+					for(var j = 0; j <= lis.length - 1; j++) {
+						lis[j].className = "";
+					}
+					this.className = "on"; /* lis[i].className = "on"; */
+					num = this.index;
+					num1 = this.index;
+					pic.src = arry[num];
+				}
+			}
+
+			banner.onmouseover = function() {
+				clearInterval(timer);
+			}
+
+			banner.onmouseout = function() {
+				play();
+			}
+
+			play();
+		</script>
+
+	</body>
+
+</html>
